@@ -1,7 +1,7 @@
 {
-  "name": "reflare",
-  "version": "1.0.1",
-  "description": "Lightweight and scalable reverse proxy and load balancing library built for Cloudflare Workers",
+  "name": "livepeer-rpcflare",
+  "version": "1.0.5",
+  "description": "a reflare port specificly tailored for the needs of Livepeer and Arbitrum RPC",
   "main": "dist/src/index.js",
   "types": "dist/src/index.d.ts",
   "scripts": {
@@ -15,7 +15,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/xiaoyang-sde/reflare.git"
+    "url": "git+https://github.com/mikezupper/livepeer-rpcflare.git"
   },
   "keywords": [
     "serverless",
@@ -24,25 +24,25 @@
     "cloudflare",
     "reverse-proxy"
   ],
-  "author": "Xiaoyang Liu",
+  "author": "Mike Zupper <me@mikezupper.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/xiaoyang-sde/reflare/issues"
+    "url": "https://github.com/mikezupper/livepeer-rpcflare/issues"
   },
-  "homepage": "https://reflare.js.org",
-  "devDependencies": {
-    "@cloudflare/workers-types": "^3.14.0",
-    "@types/jest": "^27.5.0",
-    "@typescript-eslint/eslint-plugin": "^5.30.4",
-    "@typescript-eslint/parser": "^5.30.4",
-    "eslint": "^8.19.0",
+  "homepage": "https://github.com/mikezupper/livepeer-rpcflare",
+  "dependencies": {
+    "@cloudflare/workers-types": "^3.14.1",
+    "@types/jest": "^28.1.7",
+    "@typescript-eslint/eslint-plugin": "^5.33.1",
+    "@typescript-eslint/parser": "^5.33.1",
+    "eslint": "^8.22.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-airbnb-typescript": "^17.0.0",
     "eslint-plugin-import": "^2.26.0",
-    "jest": "^27.5.1",
-    "jest-environment-miniflare": "^2.5.1",
-    "miniflare": "^2.5.1",
-    "ts-jest": "^27.1.4",
+    "jest": "^28.1.3",
+    "jest-environment-miniflare": "^2.7.0",
+    "miniflare": "^2.7.0",
+    "ts-jest": "^28.0.8",
     "typescript": "^4.7.4"
   }
 }

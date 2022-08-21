@@ -74,7 +74,9 @@ export const useLoadBalancing: Middleware = async (
     validateUpstream(upstream);
   }
 
-  const upstreamArray = Array.isArray(upstream) ? upstream : [upstream];
+  const ua = Array.isArray(upstream) ? upstream : [upstream];
+  const upstreamArray = ua.filter((x) => x.enabled);
+  //console.debug('filtered upstream array', upstreamArray);
   if (loadBalancing === undefined) {
     context.upstream = randomHandler(upstreamArray, request);
     await next();
